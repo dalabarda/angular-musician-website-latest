@@ -1,0 +1,8 @@
+div{
+    display: block;
+}
+
+#map {
+  height: 150px;
+  width: 100%;
+}

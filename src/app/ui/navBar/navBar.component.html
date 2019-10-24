@@ -1,0 +1,50 @@
+<div *ngIf="!screenIsMobile; then thenDesktop else elseMobile"> 
+</div>
+
+
+<!-- Desktop -->
+<ng-template #thenDesktop>
+  <ul>
+    <li *ngFor="let menu of menus">
+      <a (click)="addNewEntry(menu.component)">{{ menu.menu }}</a>
+    </li>
+  </ul>
+</ng-template>
+
+
+<!-- Mobile -->
+<ng-template #elseMobile>
+  <div class="topnav">
+
+    <!-- Top Navigation Menu -->
+    <div>
+      <div class="bit-button" 
+           (click)="myFunction2()">
+
+          <div class="bit-svg-button" *ngIf="!dropdown">
+          <svg  viewBox="0 0 10 10"
+                height="10"
+                width="10"
+                role="img"
+                class="svg-icon">
+                <path d="m1 7h8v2h-8zm0-3h8v2h-8zm0-3h8v2h-8z"/>
+          </svg>
+          </div>
+
+          <div *ngIf="!showMenus" >
+
+            <a *ngFor="let menu of menus" 
+                (click)="addNewEntry(menu.component)">
+                  {{ menu.menu }}
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+
+<!-- ---------------------------------------------------- -->
+              <!-- [@state]="state"
+              (@state.done)="onStateDone($event)" -->

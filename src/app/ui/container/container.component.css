@@ -1,0 +1,27 @@
+
+
+.hero-image2 {
+  /* background image */
+  background: linear-gradient(to bottom, transparent 75%, powderblue 98%),
+      url("https://www.nacona.de/wp-content/uploads/2018/08/Jo-png.png");
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.dv-bio, .dv-promo, .dv-news, .dv-media, .dv-contact {
+  /* class only for transition */
+  background: rgba(0, 0, 0, 0.4);
+  height: 550px;
+  transition: all ease 0.9s;
+}
+
+.dv-hero {
+  /* class only for transition */
+  transition: all ease 0.9s;
+  -webkit-transition: all ease 0.9s; /* Safari prior 6.1 */
+  height: 0px;
+}
+

@@ -1,0 +1,10 @@
+:host {
+  /* centering the div */
+  /* background: yellow; */
+  display:    block;
+  position:   absolute;
+  transform:  translate(-0%, -0%);
+  top: 8.5%;
+  height: 550px;
+  width: 100%;
+}

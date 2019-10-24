@@ -1,0 +1,8 @@
+
+:host {
+  display:          block;
+  text-align:       center;
+  font-family:      var(--font-family-lato);
+  background-color: var(--background-color);
+}
+

@@ -1,0 +1,78 @@
+/*  */
+svg {
+  cursor: pointer;
+  position: relative;
+  max-width: 85px;
+  max-height: 85px;
+  min-width: 70px;
+  min-height: 70px;
+  fill: rgb(221, 221, 221); 
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .4));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .4));
+  /* Similar syntax to box-shadow */
+
+  transition: 100ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+
+  background-color: transparent;
+  /* this select the color of the following parameter */
+  border-style: solid;           /* this creates the line surrounding the button*/
+  color: transparent; 
+  z-index: 1;
+}
+
+/* ----------------------- */
+
+/* applemusic */
+.applemusic_icon_hover { 
+  border-style: solid; color: rgb(192, 96, 179);
+  background: linear-gradient(190deg, rgb(255, 114, 48),
+                                      #ff5bfc 24%,
+                                      #d95afc 36%,
+                                      #5980ff 68%,
+                                      #3c45a8 91%
+                                      );}
+
+/* amazon */
+.amazon_icon_hover {
+  background-color: white; color: #FF9900; 
+  border-style: solid;
+  }
+
+/* bandcamp */
+.bandcamp_icon_hover { 
+  background: #eef2f3; fill: #3DA0C5; color: #3DA0C5; 
+  border-style: solid;
+  }
+
+/*deezer*/
+.deezer_icon_hover { 
+  background: #23232a ; color: #e3231d; 
+  border-style: solid;
+  }
+
+/*facebook*/
+.facebook_icon_hover { 
+  background: #eef2f3 ; fill: #3b5998; color: #3b5998; 
+  border-style: solid;
+  }
+
+/*soundcloud*/
+.soundcloud_icon_hover { 
+  background: rgb(242, 242, 242); fill: #FF5836; color: #FF5836; 
+  border-style: solid;
+  }
+
+/*spotify*/
+.spotify_icon_hover { 
+  background: black; fill: #1DB954; color: #1DB954; 
+  border-style: solid;
+  }
+
+/*tidal*/
+.tidal_icon_hover { 
+  background: #eef2f3; fill: #000000; color: #000000; 
+  border-style: solid; 
+}

@@ -1,0 +1,67 @@
+<div class="container">
+  <!-- This container is the last step before the app component -->
+  <dv-container>loading</dv-container>
+
+  <br>
+  <br>
+
+  <dv-event-list></dv-event-list>
+  <dv-event-map></dv-event-map>
+
+  <br>
+  <br>
+  <h3><span>------ Testing zone ------</span></h3>
+  <p>------ Testing some things in Angular 8 ------</p>
+  <p class="margintop">Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+
+
+  <example-app></example-app>
+  <br>
+  <br>
+
+  <br>
+  <br>
+
+  <div>
+    <button 
+      (click)="show = !show"
+      hoverClass [defaultColor]="'yellow'" [highlightColor]="'red'"
+    >toggle show ({{show}})</button>
+    <div *ngIf="show" [@enterAnimation]>xxx</div>
+  </div>
+
+  <br>
+    <!-- ? safe operator for async operation -->
+    <h5>your IP is: {{ ipAddress?.ip }}</h5>
+  <br>
+
+  <div>
+    <!-- (onSelectionChange)="onBtnSelectionChange($event)" -->
+    <!-- (click)="onBtnSelectionChange($event)" -->
+    <button 
+
+      (click)="onBtnSelectionChange($event)"
+
+
+
+  
+    >
+    Click {{ 5 - ClickTracker.length }} times to <strong>{{ showSomethingLabel }}</strong> "xxx"</button>
+    <div *ngIf="showSomething" [@enterAnimation]>xxx</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<sleeve></sleeve>
+  
+  <br>
+  <br>
+
+
+</div>
+
+
+

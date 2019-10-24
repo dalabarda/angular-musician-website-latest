@@ -1,0 +1,6 @@
+svg {
+  /* this is an important workaround to not display undesired space beneath footer. */ 
+  display: none; 
+  height: 0px;
+}
+

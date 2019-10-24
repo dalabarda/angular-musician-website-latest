@@ -1,0 +1,45 @@
+/* OLD CSS stylesheet */
+
+:root {
+
+  --padding-dialog: 0.25rem;   /* this is just an example. change the value afterwards*/
+
+  /* NOTE:  */
+  --width-dialog-btn:                  8rem;
+  --border-width-dialog-title:         1px;
+  --border-width-preview-area:         0.25rem;
+
+  --height-btn:                        2rem;
+  --height-buttons:                    2.5rem;
+  --height-checkbox-span-nocalc:       (1rem + 2px);
+  --height-checkbox-span:              14px;
+  --line-height-group-title:           1rem;
+  --line-height-multiline:             2rem;
+
+  --margin-bottom-search:              var(--padding-dialog);
+  --margin-bottom-top-bar:             0.25rem;
+  --margin-left-btn-buttons:           0.5rem;
+
+  --padding-table:                     0.25rem;
+
+  --size-flat-btn:                     2rem;
+  --size-icon-medium:                  3rem;
+
+  --width-badge:                       3.25rem;
+  --width-btn-large:                   20rem;
+  --width-checkbox-span-nocalc:        (1rem + 2px);
+  --width-checkbox-span:               calc(var(--width-checkbox-span-nocalc));
+  --width-control-l-:                  19.5rem;
+  --width-control-l:                   20rem;
+  --width-vertical-toolbar-btn-nocalc: (var(--width-dialog-btn) + 0.5rem - 2px);
+  --width-vertical-toolbar-btn:        calc(var(--width-vertical-toolbar-btn-nocalc));
+  --width-vertical-toolbar-nocalc:     (var(--width-vertical-toolbar-btn) + 2px);
+  --width-vertical-toolbar:            calc(var(--width-vertical-toolbar-nocalc));
+
+  /* background-color: powderblue; display: block; margin: 0px; */
+}
+
+
+input[type="text"],
+input[type="password"]
+{ display: block;}

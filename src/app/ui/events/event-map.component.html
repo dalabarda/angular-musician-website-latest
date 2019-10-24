@@ -1,0 +1,21 @@
+<div class="">
+  <br>
+    <div class="">Click on One Concert to see it on the map:</div>
+    <div *ngIf="lat == 0" style="color: red"> Sorry, we don't have location data of this concert
+      </div>
+</div>
+
+<div  id="map">
+</div>
+
+
+<!-- DEAD CODE - TESTING ZONE -->
+<!-- <div style="height: 300px; width: 500px display: block"
+  leaflet 
+  [leafletOptions]="options"
+  (leafletMapReady)="onMapReady($event)"
+  >
+
+
+  *ngIf="lat != 0"
+</div> -->

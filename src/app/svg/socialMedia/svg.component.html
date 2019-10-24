@@ -1,0 +1,25 @@
+
+<svg ngClass="{{ my_Class }}" 
+
+    [style.height.px]="svgWidth"
+    [style.width.px]="svgWidth"
+    (click)="onSocialMediaIconClick()"
+
+    (mouseenter)="toggle_class()"
+    (mouseleave)="toggle_class()"
+    >
+  <!-- <rect *ngIf="show" width="100%" height="100%" fill=" white "/> -->
+    <use [attr.href]="absUrl + '#' + name"></use>                            
+    <use *ngIf="show"  [attr.href]="absUrl + '#' + name + '_hover'"></use>
+</svg>
+
+<!-- 
+<ng-template #templateHeadDefault [ngIf]="!data.number" let-column>
+    <div class="text" [ntTooltip]="getThTooltip(column)">{{ getThText(column) }}</div>
+</ng-template>
+
+<ng-template #templateHeadDefaultNumber [ngIf]="data.number" let-column>
+    <div class="number" [ntTooltip]="getThTooltip(column)">{{ getThText(column) }}</div>
+</ng-template>
+
+ -->

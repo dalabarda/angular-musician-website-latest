@@ -1,0 +1,70 @@
+<div>
+  <h2>Tour Dates</h2>
+  <a>Upcoming Dates</a>
+<br>
+
+  <div class="bit-widget-container"
+  (onSelectionChange)="onBodySelectionChange($event)"
+  >
+    <div [ngClass]="{
+      'list-item-desktop':!screenIsMobile,
+      'list-item-phone':screenIsMobile
+      }">
+      <a href="#" style="text-align: left">
+      <span>Track</span> to get concert and tour updates...
+      </a>
+
+        <div class="bit-event"
+          *ngFor="let event of events"
+          [ngClass]="{'active': event?.id === selectedProduct?.id}"
+          (click)='onSelected(event)'
+          >
+          <a class="bit-details">
+            <div class="bit-date"><span >{{ event.date | date:'E, LLL dd' }}</span></div>
+            <div class="bit-venue">{{ event.place }}</div>
+            <div class="bit-location">{{ event.city }}, {{ event.country }}</div>
+          </a>
+          
+
+          <!--  -->
+          <div class="bit-details">
+            <!-- RSVP button -->
+            <div class="bit-rsvp-container">
+                <a class="bit-rsvp bit-button" 
+                    href="{{ event.site }}" 
+                    target="_blank" 
+                    aria-label="RSVP">
+                      RSVP
+                </a> 
+            </div>
+            <!-- Tickets button -->
+            <div>
+              <a class="bit-offers bit-button"
+                  [ngStyle]="{ 'background-color': getStyleOriginal(event.availability) }"
+                  target="_blank" 
+                  href="{{ event.site }}" 
+                  aria-label="Tickets">
+                  <span>
+                    Tickets ({{event.availability}})
+                  </span>
+              </a>
+            </div>
+            
+          </div>
+        </div>     
+    </div>
+
+    <!-- space and the last "Ask to Play in your city" button -->
+    <br>
+    <a class="bit-play-my-city-button" 
+        href="#" 
+        target="_blank">
+          Ask to play in your city
+    </a>
+
+  </div> 
+</div>
+
+
+
+<!-- https://www.bandsintown.com/a/3298684?affil_code=js_www.jacobcollier.com&amp;app_id=js_www.jacobcollier.com&amp;came_from=242&amp;trigger=play_my_city&amp;utm_campaign=play_my_city&amp;utm_medium=web&amp;utm_source=widget -->

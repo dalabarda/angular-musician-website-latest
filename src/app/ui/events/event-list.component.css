@@ -1,0 +1,182 @@
+
+/* :host { */
+  /* text-align: left;  */
+  /* important to override the global center alignment in styles.css */
+/* }  */
+
+h2 {
+  margin:0;
+  letter-spacing: 4.2px;
+} 
+
+a {
+  display: block;
+  text-decoration: none;
+  min-width: 150px;
+  color: inherit;
+  box-shadow: none;
+  /* text-align: center; */
+}
+
+/* ----------------------  ---------------------- */
+
+.bit-date {
+    min-width: 95px;
+    margin: 0 5px 0 0;
+    font-weight: bold;
+}
+
+.bit-event {
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgba(124,124,124,0.25);
+  color: #000000;
+}
+.bit-event:hover {
+  background-color: rgba(50,50,50,0.1);
+  transition: background-color 0.25s;
+}
+.bit-event:nth-child(odd) .bit-venue {color: #62721d;}
+.bit-event:nth-child(even) .bit-venue {color: #007edb;}
+.bit-event:last-child { border-bottom: 1px solid rgba(124,124,124,0.25); }
+
+.bit-details:first-child { flex-grow: 1; }
+
+
+
+
+/* BUTTONS */
+.bit-offers {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid fuchsia;
+  background-color: rgb(255, 142, 249);
+  color: #FFFFFF;
+  /* width: 50px; */
+  /* more in the component -> getStyleOriginal()*/
+}
+
+
+.bit-button {
+  text-align: center;
+  line-height: 44px;
+  font-weight: bold;
+  width: 150px;
+  transition: background 0.3s;
+}
+
+.bit-button:hover {
+  color: white;
+  background: rebeccapurple;
+  border-color: rebeccapurple;
+}
+
+
+.bit-rsvp {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #000000;
+  border: 1px solid #048eff;
+}
+
+
+/* -------------------------- */
+/* ----- DESKTOP LAYOUT ----- */
+.list-item-desktop .bit-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-item-desktop .bit-location {
+    margin: 0 10px 0 5px;
+    text-align: right;
+    font-weight: normal;
+    hyphens: auto;
+    min-width: 65px;
+}
+.list-item-desktop .bit-venue {
+    margin: 0 auto 0 0;
+    min-width: 65px;
+}
+
+/* RSVP button */
+.list-item-desktop .bit-rsvp-container {
+  flex-basis: 50%;
+  margin-right: 5px;
+  padding: 0 8px 0 0;
+}
+
+
+/* ------------------------ */
+/* ----- PHONE LAYOUT ----- */
+/* .list-item-phone {
+  flex-direction: row;
+  text-decoration: none;
+} */
+
+.list-item-phone .bit-event .bit-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+/* RSVP button */
+.list-item-phone .bit-rsvp-container {
+  /* flex-basis: 50%; */
+  margin-bottom: 5px;
+  padding: 0 8px 0 0;
+}
+
+
+
+/* --- ASK TO PLAY IN YOUR CITY btn --- */
+.bit-play-my-city-button {
+  background-color:cyan;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 44px;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.bit-play-my-city-button:hover {
+  color: white;
+  background: rebeccapurple;
+  border-color: rebeccapurple;
+}
+
+
+/* example of nth... */
+.data .col:nth-of-type(2)
+{
+    width: 5.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* not in use so far. it must be implemented */
+.list-item-desktop.disabled, .list-item-desktop:disabled, 
+.list-item-phone.disabled, .list-item-phone:disabled {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+}
+
+.bit-event.active, .bit-event.active {
+  z-index: 2;
+  color: #fff;
+  background-color: rgba(0, 123, 155 , 0.35);;
+  /* border-color: #007bff; */
+}

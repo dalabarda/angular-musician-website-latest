@@ -1,0 +1,67 @@
+:host
+{
+    background-color: blue;    
+    display:          block;
+    border-top:       2px solid #fff;
+}
+
+.container 
+{
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0;
+    /* Scale the icon to match the font-size of the parent element. */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.nav-sub-item
+{
+  position: absolute;
+  background-color: #791;
+}
+
+.nav-item:hover .sub_menu1
+{
+  visibility: visible;
+}
+
+.footer-secondary
+{
+  background-color: #111; /* TODO: */
+}
+
+.footer-primary
+{
+  background-color: #111; /* TODO: */
+}
+
+
+
+/* 
+ *  column1 col-xs-4 col-md-4
+ *      column1 =
+ *      col-xs-4 =
+ *      col-md-4 =
+ */
